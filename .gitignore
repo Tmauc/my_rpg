@@ -1,0 +1,6 @@
+*.o
+README.md
+vg*
+proc
+my_rpg
+libmy.a

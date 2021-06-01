@@ -1,0 +1,17 @@
+number of particules in the buffer (int)
+size in x of the vertex (int)
+size in y of the vertex (int)
+speed of each particle (float)
+random speed of each particle (float)
+life duration (float) * 100
+fade factor (int)
+red of the particle (int)
+random red of the particle (int)
+green of the particle (int)
+random green of the particle (int)
+blue of the particle (int)
+random blue of the particle (int)
+transparency (int)
+random angle (float)
+
+.legend for particle ressources

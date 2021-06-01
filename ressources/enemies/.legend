@@ -1,0 +1,16 @@
+link to image (.png)
+size in x (rect width)
+size in y (rect height)
+type (mob ID)
+spell1 (spell ID)
+spell2 (spell ID)
+scale x
+scale y
+cd (float cooldown)
+level
+pvm
+frc
+def
+vit
+
+.legend for enemy files

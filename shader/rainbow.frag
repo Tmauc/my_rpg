@@ -1,0 +1,39 @@
+#version 130
+
+uniform sampler2D texture;
+uniform float time = 0;
+
+vec2 step = vec2(1, 1) / textureSize(texture, 0);
+
+float adj(ivec2 v)
+{
+	return (texture2D(texture, vec2(gl_TexCoord[0].x + float(step.x) * v.x,
+		gl_TexCoord[0].y + float(step.y) * v.y)).a);
+}
+
+float aura(int n)
+{
+	float f = adj(ivec2(1, 0));
+
+	for (int x = -n; x < n; x++)
+	    for (int y = -n; y < n; y++)
+
+	    	f = max(adj(ivec2(x, y)), f);
+
+ 	return (f);
+}
+
+void main()
+{
+  	vec4 pixel = texture2D(texture, gl_TexCoord[0].xy);
+	vec4 color = gl_TexCoord[0];
+	if (pixel.a < 1)
+	{
+		float f = aura(5);
+		color.x = mod(time, 1);
+		color.z = mod(-time, 1);
+		gl_FragColor = vec4(color.xyz, f);
+	}
+	else
+		gl_FragColor = pixel;
+}

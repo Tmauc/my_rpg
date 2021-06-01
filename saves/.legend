@@ -1,0 +1,36 @@
+Each folder contains multiple files,
+first one contains stats :
+PVM (Max HP)
+PVA (Current HP)
+FRC (Strength)
+DEF (Defense)
+PRC (Precision)
+VIT (Speed)
+CHA (Luck)
+EXP (Experience points)
+LVL (Level)
+
+second one is the custom data :
+sex (0-1)
+class (0-3)
+name (character string)
+quests (0-***)
+
+third one is the skill tree :
+lockstate of passive1 (0-1)
+lockstate of passive2 (0-1)
+lockstate of passive3 (0-1)
+lockstate of spell1-1 (0-1)
+lockstate of spell1-2 (0-1)
+lockstate of spell1-3 (0-1)
+lockstate of spell2-1 (0-1)
+lockstate of spell2-2 (0-1)
+lockstate of spell3-1 (0-1)
+lockstate of spell3-2 (0-1)
+Chosen passive number (0-2)
+Chosen spell number (0-2)
+Chosen spell number (0-1)
+Chosen spell number (0-1)
+Skill points
+
+if you've lost your save, you can copy the rescue one.
